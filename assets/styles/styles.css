@@ -13,12 +13,52 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header */
+
 header {
     background-color: var(--obsidian);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 30px;
+}
+header ul li {
+    padding-left: 20px;
+    color: var(--grey);
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+    height: 75%;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
@@ -29,14 +69,26 @@ h1 {
     border-radius: 0 50px 50px 0;
 }
 
+/* About Me */
+
 h2 {
     background-color: var(--teal);
     color: var(--grey);
-    padding: 4px 15px 4px 30px;
+    padding: 4px 25px 4px 30px;
     border-radius: 0 50px 50px 0;
     height: 3em;
     line-height: 1.5;
     height: 1.5;
+}
+
+#aboutMe p {
+    width: 90%;
+}
+
+/* Work */
+
+#mainSection {
+    margin-top: 10px;
 }
 
 #work h2 {
@@ -44,25 +96,9 @@ h2 {
     height: 50px;
 }
 
-ul li {
-    list-style-type: none;
-    display: inline;
-}
-
-header ul li {
-    color: var(--teal);
-    font-weight: bolder;
-}
-
-footer nav {
-    width: 90%;
-}
-
-nav ul {
+#work article {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 75%;
+    flex-direction: column;
 }
 
 .section {
@@ -72,10 +108,49 @@ nav ul {
 
 .section h2 {
     text-align: right;
-    padding-right: 20px;
     width: 10%;
 }
 
-.section p {
+#aboutMe img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 15px;
+    float: left;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+article section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.threeByTwo img {
+    height: 250px;
+    margin: 10px 10px 0px 10px;
+}
+
+.sixteenByNine img {
+    height: 175px;
+    margin: 10px 10px 0px 10px;
+}
+
+figure {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.75);
+  margin-left: 20px;
+  background-color: var(--teal);
+  color: var(--grey);
+  text-align: center;
+}
+
+figcaption p {
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+/* Contact Me */
+
+footer nav {
     width: 90%;
 }
