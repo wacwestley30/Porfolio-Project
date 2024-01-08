@@ -8,23 +8,74 @@
 
 body {
     background-color: var(--grey);
+    margin: 0;
+    color: var(--navy);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: var(--obsidian);
-    color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding-right: 30px;
 }
 
 h1 {
     font-size: 40px;
+    background-color: var(--teal);
+    color: var(--grey);
+    padding: 4px 15px 4px 30px;
+    border-radius: 0 50px 50px 0;
+}
+
+h2 {
+    background-color: var(--teal);
+    color: var(--grey);
+    padding: 4px 15px 4px 30px;
+    border-radius: 0 50px 50px 0;
+    height: 3em;
+    line-height: 1.5;
+    height: 1.5;
+}
+
+#work h2 {
+    line-height: 50px;
+    height: 50px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
 }
 
 header ul li {
-    list-style-type: none;
-    display: inline;
-    padding: 0 10px;
+    color: var(--teal);
+    font-weight: bolder;
+}
+
+footer nav {
+    width: 90%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75%;
+}
+
+.section {
+    display: flex;
+    padding-right: 30px;
+}
+
+.section h2 {
+    text-align: right;
+    padding-right: 20px;
+    width: 10%;
+}
+
+.section p {
+    width: 90%;
 }
